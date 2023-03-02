@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    tools:context=".Catalogo"
     android:background="@color/black"
-    tools:context=".Catalogo">
+    android:orientation="vertical"
+>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Películas &amp; series"
+        android:text="Peliculas &amp; series"
         android:fontFamily="sans-serif-light"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -19,14 +20,15 @@
         android:paddingLeft="20sp"
         android:paddingTop="15dp"
         android:paddingBottom="15dp"
-        />
+    />
 
     <GridView
-        android:id="@+id/gridview"
+        android:id="@+id/gridView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textColor="@color/yellow"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
         android:numColumns="3"
-        />
+        android:paddingHorizontal="6dp"
+        android:textColor="@color/yellow" />
 
 </LinearLayout>
